@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open MCT Exercise</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/css/mdb.min.css" rel="stylesheet">
+    <style>
+        #timestamp:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Open MCT Exercise</h1>
+        <button type="button" class="btn btn-outline-default" style="border-radius: 20px;" id="v" value="pwr.v">Voltage</button>
+        <button type="button" class="btn btn-outline-default" style="border-radius: 20px;" id="c" value="pwr.c">Current</button>
+        <table class="table table-sm">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th id="timestamp">Timestamp <i class="fas fa-sort-up"></i></th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tbody id="tableData">
+            </tbody>
+        </table>
+        <script src="./app.js" type="module"></script>
+    </div>
+</body>
+</html>
