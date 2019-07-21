@@ -50,6 +50,12 @@ export default class Table {
     render() {
         this.element.innerHTML = ''
 
+        if (!this.asc) {
+            this.tableData.desc()
+        } else {
+            this.tableData.asc()
+        }
+
         this.tableData.data.forEach(row => {
             this.insertHtmlRow(row, -1)
         })
